@@ -49,4 +49,64 @@ public class Multa {
     public boolean realizarPagamento() {
         return pagamentoStrategy.realizarPagamento(valor);
     }
+
+    public Date getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+
+    public Date getDataDevolucao() {
+        return dataDevolucao;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Livro getLivro() {
+        return livro;
+    }
+
+    public Date getDataMulta() {
+        return dataMulta;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public void setDataEmprestimo(Date dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public void setLivro(Livro livro) {
+        this.livro = livro;
+    }
+
+    public void setDataMulta(Date dataMulta) {
+        this.dataMulta = dataMulta;
+    }
+
+    public void setDataDevolucao(Date dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public void setPagamentoStrategy(PagamentoStrategy pagamentoStrategy) {
+        this.pagamentoStrategy = pagamentoStrategy;
+    }
 }
